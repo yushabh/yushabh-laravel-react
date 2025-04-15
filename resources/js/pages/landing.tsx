@@ -6,7 +6,7 @@ import About from '@/components/sections/about';
 import Skills from '@/components/sections/skills';
 import Portfolio from '@/components/sections/portfolio';
 import Resume from '@/components/sections/resume';
-import { Contact } from 'lucide-react';
+import Contact from '@/components/sections/contact';
 import ScrollToTop from '@/components/sections/scrolltotop';
 
 export default function Landing() {
