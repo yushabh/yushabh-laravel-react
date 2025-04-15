@@ -2,6 +2,7 @@ import Header from '@/components/sections/header';
 import { Head } from '@inertiajs/react';
 import Footer from '@/components/sections/footer';
 import Hero from '@/components/sections/hero';
+import About from '@/components/sections/about';
 
 export default function Landing() {
     return (
@@ -11,6 +12,7 @@ export default function Landing() {
                 <Header />
                 <main>
                     <Hero />
+                    <About />
                 </main>
                 <Footer />
             </div>
