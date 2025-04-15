@@ -4,6 +4,7 @@ import Footer from '@/components/sections/footer';
 import Hero from '@/components/sections/hero';
 import About from '@/components/sections/about';
 import Skills from '@/components/sections/skills';
+import Portfolio from '@/components/sections/portfolio';
 
 export default function Landing() {
     return (
@@ -15,6 +16,7 @@ export default function Landing() {
                     <Hero />
                     <About />
                     <Skills />
+                    <Portfolio />
                 </main>
                 <Footer />
             </div>
