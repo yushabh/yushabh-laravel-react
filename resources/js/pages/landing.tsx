@@ -6,6 +6,7 @@ import About from '@/components/sections/about';
 import Skills from '@/components/sections/skills';
 import Portfolio from '@/components/sections/portfolio';
 import Resume from '@/components/sections/resume';
+import { Contact } from 'lucide-react';
 
 export default function Landing() {
     return (
@@ -19,6 +20,7 @@ export default function Landing() {
                     <Skills />
                     <Portfolio />
                     <Resume />
+                    <Contact />
                 </main>
                 <Footer />
             </div>
