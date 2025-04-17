@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com/yush2428',
+      url: 'https://github.com/yushabh',
       icon: FaGithub,
       bgColor: 'bg-[#6e40c9]'
     },
