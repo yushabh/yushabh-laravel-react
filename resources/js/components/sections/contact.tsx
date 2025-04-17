@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-primary text-lg font-medium mb-4">CONTACT</h2>
-          <h3 className="text-4xl font-bold text-white mb-6">Contact With Me</h3>
+          <h3 className="text-4xl font-bold text-white mb-6">Get in touch</h3>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

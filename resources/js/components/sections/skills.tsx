@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-primary text-lg font-medium mb-4">FEATURES</h2>
+          <h2 className="text-primary text-lg font-medium mb-4">SKILLS</h2>
           <h3 className="text-4xl font-bold text-white mb-6">What I Do</h3>
         </motion.div>
 
