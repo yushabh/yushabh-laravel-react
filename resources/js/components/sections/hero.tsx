@@ -63,7 +63,11 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
             >
-              Hi, I'm <span className="text-primary">Yushabh Dhande</span>
+              Hi, I'm
+              <br />
+              <span className="text-primary">Yushabh</span>
+              <br />
+              <span className="text-primary">Dhande</span>
               <br />
               <span className="text-text-light">
                 a Laravel Developer
@@ -92,7 +96,7 @@ const Hero: React.FC = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="bg-card-gradient hover:bg-hover text-white px-8 py-4 rounded-lg shadow-button hover:text-[#ff014f] transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+                className="bg-card-gradient hover:bg-hover px-8 py-4 rounded-lg shadow-button hover:text-[#ff014f] transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
               >
                 View My Works
               </Link>
@@ -144,7 +148,7 @@ const Hero: React.FC = () => {
               >
                 <div className="bg-card-gradient rounded-3xl p-6 shadow-card overflow-hidden">
                   <img
-                    src="/yushabh.jpg"
+                    src="/assets/images/yushabh.jpg"
                     alt="Yushabh Dhande"
                     className="w-full h-auto rounded-2xl"
                   />
