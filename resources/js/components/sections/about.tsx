@@ -18,7 +18,7 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-[#ff014f] text-lg font-medium mb-4">ABOUT ME</h2>
+          <h2 className="text-primary text-lg font-medium mb-4">ABOUT ME</h2>
           <h3 className="text-4xl font-bold text-white mb-6">Way of Success</h3>
         </motion.div>
 

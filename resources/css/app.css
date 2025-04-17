@@ -200,6 +200,10 @@
     padding: 0 15px;
 }
 
+.group:hover .group-hover\:text-primary {
+    color: var(--primary-color);
+}
+
 /* Utility Classes */
 .text-primary {
     color: var(--primary-color);
