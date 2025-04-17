@@ -77,40 +77,22 @@
     }
 }
 
+/* Variables */
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --destructive-foreground: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.87 0 0);
-    --chart-1: oklch(0.646 0.222 41.116);
-    --chart-2: oklch(0.6 0.118 184.704);
-    --chart-3: oklch(0.398 0.07 227.392);
-    --chart-4: oklch(0.828 0.189 84.429);
-    --chart-5: oklch(0.769 0.188 70.08);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.87 0 0);
+    --primary-color: #ff014f;
+    --background: #212428;
+    --card-dark: #1e2024;
+    --text-light: #c4cfde;
+    --text-dark: #878e99;
+    --white: #ffffff;
+
+    --card-gradient: linear-gradient(145deg, #1e2024, #23272b);
+    --card-hover-gradient: linear-gradient(to right bottom, #212428, #16181c);
+
+    --card-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --button-shadow: 4px 4px 8px #1c1e22, -4px -4px 8px #262a2e;
+
+    --transition-base: all 0.3s ease;
 }
 
 .dark {
@@ -120,9 +102,9 @@
     --card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.145 0 0);
     --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.985 0 0);
+    --primary: #ff014f;
     --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
+    --secondary: #212428;
     --secondary-foreground: oklch(0.985 0 0);
     --muted: oklch(0.269 0 0);
     --muted-foreground: oklch(0.708 0 0);
@@ -146,14 +128,142 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(0.269 0 0);
     --sidebar-ring: oklch(0.439 0 0);
+    --text-light: #C4CFDE;
+    --text-dark: #878E99;
+    --background: #212428;
+    --card-dark: #1E2024;
+    --bg-card-gradient: linear-gradient(145deg, #1e2024, #23272b);
+    --card-hover-gradient: linear-gradient(to right bottom, #212428, #16181c);
+    --card-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --button-shadow: 4px 4px 8px #1c1e22, -4px -4px 8px #262a2e;
+    --transition-base: all 0.3s ease;
 }
 
 @layer base {
     * {
-        @apply border-border;
+        box-sizing: border-box;
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary) var(--card-dark);
     }
 
     body {
-        @apply bg-background text-foreground;
+        background-color: var(--background);
+        color: var(--text-light);
+        font-family: "Poppins", sans-serif;
+    }
+
+
+}
+
+/* Card Styles */
+.card {
+    background: var(--card-gradient);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-base);
+}
+
+.card:hover {
+    color: var(--primary-color);
+    background: var(--card-hover-gradient);
+    transform: translateY(-5px);
+}
+
+.about-card-dark {
+    background: var(--card-dark);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Button Styles */
+.button {
+    background: var(--card-gradient);
+    color: var(--text-light);
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+    box-shadow: var(--button-shadow);
+    transition: var(--transition-base);
+}
+
+.button:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Utility Classes */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.bg-card {
+    background: var(--card-gradient);
+}
+
+.bg-hover {
+    background: var(--card-hover-gradient);
+}
+
+.shadow-card {
+    box-shadow: var(--card-shadow);
+}
+
+.shadow-button {
+    box-shadow: var(--button-shadow);
+}
+
+.rounded-lg {
+    border-radius: 10px;
+}
+
+.rounded-full {
+    border-radius: 999px;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:text-7xl {
+        font-size: 4.5rem;
+        line-height: 1;
     }
 }
