@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             ))}
             <a
               href="#contact"
-              className="bg-card-gradient hover:bg-hover text-white px-6 py-3 rounded-lg shadow-button hover:text-primary transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-card-gradient hover:bg-hover px-6 py-3 rounded-lg shadow-button hover:text-primary transition-all duration-300 transform hover:-translate-y-1"
             >
               Hire Me
             </a>
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
                 ))}
                 <a
                   href="#contact"
-                  className="block text-center bg-card-gradient hover:bg-hover text-white px-6 py-3 rounded-lg shadow-button hover:text-primary transition-all duration-300"
+                  className="bg-card-gradient hover:bg-hover px-6 py-3 rounded-lg shadow-button hover:text-primary transition-all duration-300 transform hover:-translate-y-1"
                   onClick={() => setIsOpen(false)}
                 >
                   Hire Me
