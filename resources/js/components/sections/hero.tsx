@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/yush.d_2428',
+      url: 'https://www.instagram.com/yush.d_24',
       icon: FaInstagram,
       bgColor: 'bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737]'
     },

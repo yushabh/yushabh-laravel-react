@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com/yush2428',
+      url: 'https://github.com/yushabh',
       icon: FaGithub,
       bgColor: 'bg-[#6e40c9]'
     },
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/yush.d_2428',
+      url: 'https://www.instagram.com/yush.d_24',
       icon: FaInstagram,
       bgColor: 'bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737]'
     },
