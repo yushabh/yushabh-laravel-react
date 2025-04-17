@@ -49,7 +49,7 @@ const About: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-card-dark p-6 rounded-lg text-center"
+                  className="about-card-dark p-6 rounded-lg text-center"
                 >
                   <h4 className="text-3xl font-bold text-[#ff014f] mb-2">{stat.value}</h4>
                   <p className="text-gray-400 text-sm">{stat.label}</p>
